@@ -1,99 +1,128 @@
-
 /* media queries */
 @media screen and (min-width: 840px) {
-    .insightsContainer {
-      width: 25%;
-      padding: 0 20px;
-    }
-    .insightsContainer #insightWrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .latestBlogContainer {
-      width: 75%;
-    }
-    .latestBlogContainer .blogContainer {
-      /* border-bottom: 1px solid var(--borderColor); */
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .divWrapper {
-      flex-direction: row;
-    }
-    .latestBlogContainer .blogContainer .blogCard {
-      border-bottom: 1px solid var(--borderColor);
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .latestBlogContainer .blogContainer .blogCard .imageSection {
-      width: clamp(10rem, 50vw, 22rem);
-      height: clamp(5rem, 20vw, 8rem);
-    }
-    .insightsContainer > *:not(.insightsText):not(.filterContainer) {
-      display: flex;
-    }
-    .insightsContainer .filterContainer {
-      width: 100%;
-      padding: 10px 0 15px 0;
-      border: none;
-      border-bottom: 1px solid var(--borderColor);
-      margin: 10px 0;
-      display: flex;
-      justify-content: start;
-    }
-    .insightsContainer .filterContainer a {
-      text-decoration: none;
-      color: black;
-      font-weight: lighter;
-      font-size: 1rem;
-    }
-    .insightsContainer .topicContainer {
-      border-bottom: 1px solid var(--borderColor);
-    }
-    .insightsContainer .topicContainer,
-    .insightsContainer .insightsSectionContainer {
-      width: 100%;
-      padding: 10px 0 15px 0;
-      margin: 10px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-    }
-    .topicWithArrow {
-      display: flex;
-      justify-content: space-between;
-    }
-    .topicText {
-      text-decoration: none;
-      color: black;
-      font-weight: lighter;
-      margin: 0 0 10px 0;
-      font-size: 1rem;
-    }
-    .checkboxRows {
-      display: flex;
-      gap: 0.5rem;
-      margin: 8px 0;
-      font-size: 0.9rem;
-    }
-    .topicFilters {
-      display: none;
-      height: 0px;
-      transition: all 0.3s ease-in-out;
-    }
-    #arrow,
-    #arrow1 {
-      transform: rotate(0deg);
-      height: min-content;
-      transition: all 0.3s ease-in-out;
-    }
-    #filter {
-      display: none;
-    }
-    #filterContainer {
-      display: none;
-    }
+  .insightsContainer {
+    width: 25%;
+    padding: 0 20px;
   }
-  
+  .insightsContainer #insightWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .latestBlogContainer {
+    width: 75%;
+  }
+  .latestBlogContainer .blogContainer {
+    /* border-bottom: 1px solid var(--borderColor); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .divWrapper {
+    flex-direction: row;
+  }
+  .latestBlogContainer .blogContainer .blogCard {
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .latestBlogContainer .blogContainer .blogCard .imageSection {
+    width: clamp(10rem, 50vw, 22rem);
+    height: clamp(5rem, 20vw, 8rem);
+  }
+  .insightsContainer > *:not(.insightsText):not(.filterContainer) {
+    display: flex;
+  }
+  .insightsContainer .filterContainer {
+    width: 100%;
+    padding: 10px 0 15px 0;
+    border: none;
+    border-bottom: 1px solid var(--borderColor);
+    margin: 10px 0;
+    display: flex;
+    justify-content: start;
+  }
+  .insightsContainer .filterContainer a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  .insightsContainer .topicContainer {
+    border-bottom: 1px solid var(--borderColor);
+  }
+  .insightsContainer .topicContainer,
+  .insightsContainer .insightsSectionContainer {
+    width: 100%;
+    padding: 10px 0 15px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .topicWithArrow {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topicText {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+  }
+  .checkboxRows {
+    display: flex;
+    gap: 0.5rem;
+    margin: 8px 0;
+    font-size: 0.9rem;
+  }
+  .topicFilters {
+    display: none;
+    height: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+  #arrow,
+  #arrow1 {
+    transform: rotate(0deg);
+    height: min-content;
+    transition: all 0.3s ease-in-out;
+  }
+  #filter {
+    display: none;
+  }
+  #filterContainer {
+    display: none;
+  }
+}
+
+/* media query for Assets Manager */
+@media screen and (max-width: 1000px) {
+  .United-state {
+    display: none;
+    background: red;
+  }
+  .dropdown,
+  .navbar #contact {
+    display: none;
+  }
+}
+
+/* Media query for mobile and tab view */
+@media screen and (max-width: 840px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .background-title {
+    width: calc(100% - 7rem);
+  }
+  .image-grid {
+    width: 100%;
+  }
+  .insights-content {
+    grid-template-columns: 1fr;
+  }
+  .fcontainer {
+    flex-wrap: wrap;
+  }
+}
