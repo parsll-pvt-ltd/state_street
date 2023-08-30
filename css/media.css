@@ -45,7 +45,7 @@
   .insightsContainer .filterContainer a {
     text-decoration: none;
     color: black;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 1rem;
   }
   .insightsContainer .topicContainer {
@@ -67,7 +67,7 @@
   .topicText {
     text-decoration: none;
     color: black;
-    font-weight: lighter;
+    font-weight: normal;
     margin: 0 0 10px 0;
     font-size: 1rem;
   }
