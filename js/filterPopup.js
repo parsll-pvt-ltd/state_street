@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           document.querySelector("#popup").style.left = "-200vw";
         }
-        console.log("object");
       });
-      console.log("object");
       window.removeEventListener("resize", checkWidthAndAttachEvent);
     }
   }
