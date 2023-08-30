@@ -5,23 +5,14 @@ const queryParams = new URLSearchParams(window.location.search);
 fetch("../json/blog.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(queryParams.get("q"));
-    console.log(
-      data.filter(
-        (item) =>
-          item.title.includes(queryParams.get("q")) ||
-          item.desc.includes(queryParams.get("q")) ||
-          item.links.includes(queryParams.get("q")) ||
-          queryParams.get("q") === ""
-      )
-    );
     data
       .filter(
         (item) =>
           item.title.includes(queryParams.get("q")) ||
           item.desc.includes(queryParams.get("q")) ||
           item.links.includes(queryParams.get("q")) ||
-          queryParams.get("q") === ""
+          queryParams.get("q") === "" ||
+          queryParams.get("q") == undefined
       )
       .map((items, index) => {
         blogContainer.innerHTML += `
@@ -44,3 +35,6 @@ fetch("../json/blog.json")
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+
+const dataTest = document.getElementById("latestText");
+dataTest.innerText = queryParams.get("type") ?? "Latest";
