@@ -17,7 +17,7 @@
 
 .latestBlogContainer .blogContainer .blogCard .blogTitle {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: normal;
   margin: 5px 0;
   color: var(--textColor);
 }
@@ -29,7 +29,7 @@
 }
 
 .latestBlogContainer .blogContainer .blogCard .blogDescription {
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: 1px;
   word-spacing: 1.2px;
   font-size: 0.9rem;
