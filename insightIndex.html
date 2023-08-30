@@ -1,287 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/insightsStyle.css" />
+    <link rel="stylesheet" href="./css/blogStyle.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/popUp.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icons/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Insights | State Street</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/insightsStyle.css" />
-  <link rel="stylesheet" href="./css/blogStyle.css" />
-  <link rel="stylesheet" href="./css/media.css" />
-  <link rel="stylesheet" href="./css/popUp.css">
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="./assets/icons/fontawesome-free-6.4.2-web/css/all.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;1,100;1,400&display=swap"
-    rel="stylesheet" />
-  <title>Insights | State Street</title>
-</head>
-
-<body>
-  <div class="United-state">
-    <div class="container">
-      <div onclick="showPopup()" style="cursor: pointer">
-        <p class="text-top">
-          United State -Asset manager <i class="fa-solid fa-greater-than"></i>
-        </p>
-      </div>
-      <div class="topNav">
-        <ol>
-          <li>
-            Career <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </li>
-          <li>
-            Newsroom <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </li>
-          <li>
-            Investor <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </li>
-          <li>
-            State Street Global Adviser
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </li>
-          <li>Contact Us</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-
-  <div class="container navbar-container">
-    <div class="navbar">
-      <a href="#home" style="color: #004990">KATHMANDU STREET</a>
-      <div class="dropdown-wrapper">
-        <div class="dropdown">
-          <button class="dropbtn">
-            Insights Solutions <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <div class="insightdrop">
-              <ol>
-                <h2>Insights</h2>
-              </ol>
-              <ol>
-                <h2>Latest Insights</h2>
-                <li>Digital and technology</li>
-                <li>ESG</li>
-                <li>Market</li>
-                <li>Prospective</li>
-                <li>Regulation and Risk</li>
-                <li>Research</li>
-              </ol>
-              <ol>
-                <h2>Feature Topic</h2>
-                <li>Asset Allocation</li>
-                <li>Climate Rist/Decarbonization</li>
-                <li>Data management</li>
-                <li>Emerging market</li>
-                <li>Investment Operations</li>
-                <li>ETFs</li>
-                <li class="more-section">
-                  <span>All insights</span>
-                </li>
-              </ol>
-              <ol class="img-section">
-                <img src="./assets/images/insights2.avif" alt="img" width="100%" height="auto" />
-                <p class="title">State Street LIVE: Research Retreate</p>
-                <p class="insight-text">
-                  Our annual LIVE: Research Retreat offers wide-ranging
-                  industry expertise and timely market insights from our State
-                  Street Associates academic partners and in-house experts.
-                </p>
-                <p class="more-section">Read more</p>
-              </ol>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-            About <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <div class="insightdrop">
-              <ol>
-                <h2>Solutions</h2>
-              </ol>
-              <ol>
-                <h2>Latest Insights</h2>
-                <li>Digital and technology</li>
-                <li>ESG</li>
-                <li>Market</li>
-                <li>Prospective</li>
-                <li>Regulation and Risk</li>
-                <li>Research</li>
-              </ol>
-              <ol>
-                <h2>Feature Topic</h2>
-                <li>Asset Allocation</li>
-                <li>Climate Rist/Decarbonization</li>
-                <li>Data management</li>
-                <li>Emerging market</li>
-                <li>Investment Operations</li>
-                <li>ETFs</li>
-                <li class="more-section">
-                  <span>All insights</span>
-                </li>
-              </ol>
-              <ol class="img-section">
-                <img src="./assets/images/insights2.avif" alt="img" width="100%" height="auto" />
-                <p class="title">State Street LIVE: Research Retreate</p>
-                <p class="insight-text">
-                  Our annual LIVE: Research Retreat offers wide-ranging
-                  industry expertise and timely market insights from our State
-                  Street Associates academic partners and in-house experts.
-                </p>
-                <p class="more-section">Read more</p>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="search-container">
-        <i class="fa-solid fa-magnifying-glass search-container--glass"></i>
-        <input type="text" placeholder="Search..." />
-      </div>
-    </div>
-
-    <!-- Insight Content -->
-    <div class="divWrapper">
-      <div id="popup">
-        <div id="insightsPopUp">
-          <div id="upperContent">
-            <div class="crossMark">
-              <i class="fa-solid fa-xmark" id="cross"></i>
-            </div>
-            <div class="filterWrapper">
-              <a class="filterText">Filters (208 Results)</a>
-            </div>
-            <div class="filterTopics" id="filterTopics">
-              <div class="arrowWithTopic" id="arrowWrap">
-                <h2 class="topicText">Topic</h2>
-                <i class="fa-solid fa-angle-down" id="downArrow"></i>
-              </div>
-              <div id="filterCheck" class="filterCheck">
-                <div class="check">
-                  <input type="checkbox" name="AI" id="AI" class="checkboxInput" />
-                  <label for="AI" class="checkText">AI</label>
-                </div>
-              </div>
-            </div>
-            <div class="filterTopics">
-              <div class="arrowWithTopic" id="arrowWrap1">
-                <h2 class="topicText">Insights Section</h2>
-                <i class="fa-solid fa-angle-down" id="downArrow1"></i>
-              </div>
-              <div id="filterCheck1" class="filterCheck">
-                <div class="check">
-                  <input type="checkbox" name="AI" id="AI" class="checkboxInput" />
-                  <label for="AI" class="checkText">AI</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="applyBtn">
-            <hr id="btnUpLine" />
-            <input type="button" value="Apply" id="applyButton" />
-          </div>
-        </div>
-      </div>
-      <div class="insightsContainer">
-        <h1 class="insightsText">Insights</h1>
-        <div class="filterContainer" id="openFilter">
-          <i class="fa-solid fa-filter" id="filter"></i>
-          <a class="insightsFilters">Filters (208 Results)</a>
-        </div>
-        <div id="insightWrapper">
-          <div class="topicContainer">
-            <div class="topicWithArrow" id="topicArrow">
-              <h2 class="topicText">Topic</h2>
-              <i class="fa-solid fa-angle-down" id="arrow"></i>
-            </div>
-            <div id="topicFilters" class="topicFilters">
-              <div class="checkboxRows">
-                <input type="checkbox" name="AI" id="AI" class="topicCheckboxes" />
-                <label for="AI" class="chekboxText">AI</label>
-              </div>
-            </div>
-          </div>
-          <div class="insightsSectionContainer">
-            <div class="topicWithArrow" id="insightArrow">
-              <h2 class="topicText">Insights Section</h2>
-              <i class="fa-solid fa-angle-down" id="arrow1"></i>
-            </div>
-            <div id="insightFilters" class="topicFilters">
-              <div class="checkboxRows">
-                <input type="checkbox" name="AI" id="AI" class="topicCheckboxes" />
-                <label for="AI" class="chekboxText">AI</label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="latestBlogContainer">
-        <h1 class="latestText">Latest</h1>
-        <div class="blogContainer" id="blogContainer"></div>
-        <input type="button" value="Load More" id="loadButton" />
-      </div>
-    </div>
-
-    <!-- Footer Content -->
-    <footer class="footer-container">
+  <body>
+    <div class="United-state">
       <div class="container">
-        <div class="footer-upperSection">
-          <a href="#" style="color: white">contact us</a>
-          <ul class="footer-ul">
-            <li class="footer-li">
-              <i class="fa fa-twitter" aria-hidden="true"></i><a href="#">Twitter</a>
-            </li>
-            <li class="footer-li">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="#">LinkedIn</a>
-            </li>
-            <li class="footer-li">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i><a href="#">YouTube</a>
-            </li>
-          </ul>
-        </div>
-        <hr style="width: 100%; color: white" />
-        <div class="footer-middle">
-          <p></p>
-          <ul id="Policylink">
-            <li><a href="#">Australian WhistleBlower Policy</a></li>
-            <li><a href="#">Modern Slavery Statement</a></li>
-          </ul>
-
-          <p>
-            This website is intended for the user's own use in reviewing
-            information available here about State Street Corporation and its
-            affiliates ("State Street"). By accessing this website, you agree to
-            be bound by the terms and conditions that appear herein. These terms
-            and conditions are subject to change. State Street reserves the
-            right to modify these terms and conditions, which it may do by
-            posting changes to the website. If you do not agree with these terms
-            and conditions, please do not access the website.
+        <div onclick="showPopup()" style="cursor: pointer">
+          <p class="text-top">
+            United State -Asset manager <i class="fa-solid fa-greater-than"></i>
           </p>
         </div>
-        <div class="footer-bottom">
-          <p style="color: white">
-            © 2023
-            <a href="#" style="color: white">State Street Corporation.</a> All
-            rights reserved.
-          </p>
-          <ul class="footer-ul">
-            <li class="footer-li"><a href="#">Global Privacy Notice</a></li>
-            <li class="footer-li"><a href="#">Cookie Settings</a></li>
-            <li class="footer-li"><a href="#">Cookie Disclosure</a></li>
-            <li class="footer-li"><a href="#">Legal</a></li>
-            <li class="footer-li"><a href="#">Settlement Announcement</a></li>
-            <li class="footer-li"><a href="#">Sitemap</a></li>
-          </ul>
+        <div class="topNav">
+          <ol>
+            <li>
+              Career <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </li>
+            <li>
+              Newsroom <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </li>
+            <li>
+              Investor <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </li>
+            <li>
+              State Street Global Adviser
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </li>
+            <li>Contact Us</li>
+          </ol>
         </div>
       </div>
-    </footer>
-</body>
+    </div>
 
-<script src="./js/insightsScript.js"></script>
-<script src="./js/jsonScript.js"></script>
-<script src="./js/filterPopup.js"></script>
-<script src="./script.js"></script>
+    <div class="container navbar-container">
+      <div class="navbar">
+        <a href="#home" style="color: #004990">KATHMANDU STREET</a>
+        <div class="dropdown-wrapper">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Insights Solutions <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="insightdrop">
+                <ol>
+                  <h2>Insights</h2>
+                </ol>
+                <ol>
+                  <h2>Latest Insights</h2>
+                  <li>Digital and technology</li>
+                  <li>ESG</li>
+                  <li>Market</li>
+                  <li>Prospective</li>
+                  <li>Regulation and Risk</li>
+                  <li>Research</li>
+                </ol>
+                <ol>
+                  <h2>Feature Topic</h2>
+                  <li>Asset Allocation</li>
+                  <li>Climate Rist/Decarbonization</li>
+                  <li>Data management</li>
+                  <li>Emerging market</li>
+                  <li>Investment Operations</li>
+                  <li>ETFs</li>
+                  <li class="more-section">
+                    <span>All insights</span>
+                  </li>
+                </ol>
+                <ol class="img-section">
+                  <img
+                    src="./assets/images/insights2.avif"
+                    alt="img"
+                    width="100%"
+                    height="auto"
+                  />
+                  <p class="title">State Street LIVE: Research Retreate</p>
+                  <p class="insight-text">
+                    Our annual LIVE: Research Retreat offers wide-ranging
+                    industry expertise and timely market insights from our State
+                    Street Associates academic partners and in-house experts.
+                  </p>
+                  <p class="more-section">Read more</p>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              About <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="insightdrop">
+                <ol>
+                  <h2>Solutions</h2>
+                </ol>
+                <ol>
+                  <h2>Latest Insights</h2>
+                  <li>Digital and technology</li>
+                  <li>ESG</li>
+                  <li>Market</li>
+                  <li>Prospective</li>
+                  <li>Regulation and Risk</li>
+                  <li>Research</li>
+                </ol>
+                <ol>
+                  <h2>Feature Topic</h2>
+                  <li>Asset Allocation</li>
+                  <li>Climate Rist/Decarbonization</li>
+                  <li>Data management</li>
+                  <li>Emerging market</li>
+                  <li>Investment Operations</li>
+                  <li>ETFs</li>
+                  <li class="more-section">
+                    <span>All insights</span>
+                  </li>
+                </ol>
+                <ol class="img-section">
+                  <img
+                    src="./assets/images/insights2.avif"
+                    alt="img"
+                    width="100%"
+                    height="auto"
+                  />
+                  <p class="title">State Street LIVE: Research Retreate</p>
+                  <p class="insight-text">
+                    Our annual LIVE: Research Retreat offers wide-ranging
+                    industry expertise and timely market insights from our State
+                    Street Associates academic partners and in-house experts.
+                  </p>
+                  <p class="more-section">Read more</p>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search-container--glass"></i>
+          <input type="text" placeholder="Search..." id="search" />
+        </div>
+      </div>
 
+      <!-- Insight Content -->
+      <div class="divWrapper">
+        <div id="popup">
+          <div id="insightsPopUp">
+            <div id="upperContent">
+              <div class="crossMark">
+                <i class="fa-solid fa-xmark" id="cross"></i>
+              </div>
+              <div class="filterWrapper">
+                <a class="filterText">Filters (208 Results)</a>
+              </div>
+              <div class="filterTopics" id="filterTopics">
+                <div class="arrowWithTopic" id="arrowWrap">
+                  <h2 class="topicText">Topic</h2>
+                  <i class="fa-solid fa-angle-down" id="downArrow"></i>
+                </div>
+                <div id="filterCheck" class="filterCheck">
+                  <div class="check">
+                    <input
+                      type="checkbox"
+                      name="AI"
+                      id="AI"
+                      class="checkboxInput"
+                    />
+                    <label for="AI" class="checkText">AI</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filterTopics">
+                <div class="arrowWithTopic" id="arrowWrap1">
+                  <h2 class="topicText">Insights Section</h2>
+                  <i class="fa-solid fa-angle-down" id="downArrow1"></i>
+                </div>
+                <div id="filterCheck1" class="filterCheck">
+                  <div class="check">
+                    <input
+                      type="checkbox"
+                      name="AI"
+                      id="AI"
+                      class="checkboxInput"
+                    />
+                    <label for="AI" class="checkText">AI</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="applyBtn">
+              <hr id="btnUpLine" />
+              <input type="button" value="Apply" id="applyButton" />
+            </div>
+          </div>
+        </div>
+        <div class="insightsContainer">
+          <h1 class="insightsText">Insights</h1>
+          <div class="filterContainer" id="openFilter">
+            <i class="fa-solid fa-filter" id="filter"></i>
+            <a class="insightsFilters">Filters (208 Results)</a>
+          </div>
+          <div id="insightWrapper">
+            <div class="topicContainer">
+              <div class="topicWithArrow" id="topicArrow">
+                <h2 class="topicText">Topic</h2>
+                <i class="fa-solid fa-angle-down" id="arrow"></i>
+              </div>
+              <div id="topicFilters" class="topicFilters">
+                <div class="checkboxRows">
+                  <input
+                    type="checkbox"
+                    name="AI"
+                    id="AI"
+                    class="topicCheckboxes"
+                  />
+                  <label for="AI" class="chekboxText">AI</label>
+                </div>
+              </div>
+            </div>
+            <div class="insightsSectionContainer">
+              <div class="topicWithArrow" id="insightArrow">
+                <h2 class="topicText">Insights Section</h2>
+                <i class="fa-solid fa-angle-down" id="arrow1"></i>
+              </div>
+              <div id="insightFilters" class="topicFilters">
+                <div class="checkboxRows">
+                  <input
+                    type="checkbox"
+                    name="AI"
+                    id="AI"
+                    class="topicCheckboxes"
+                  />
+                  <label for="AI" class="chekboxText">AI</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="latestBlogContainer">
+          <h1 class="latestText">Latest</h1>
+          <div class="blogContainer" id="blogContainer"></div>
+          <input type="button" value="Load More" id="loadButton" />
+        </div>
+      </div>
+
+      <!-- Footer Content -->
+      <footer class="footer-container">
+        <div class="container">
+          <div class="footer-upperSection">
+            <a href="#" style="color: white">contact us</a>
+            <ul class="footer-ul">
+              <li class="footer-li">
+                <i class="fa fa-twitter" aria-hidden="true"></i
+                ><a href="#">Twitter</a>
+              </li>
+              <li class="footer-li">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ><a href="#">LinkedIn</a>
+              </li>
+              <li class="footer-li">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i
+                ><a href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+          <hr style="width: 100%; color: white" />
+          <div class="footer-middle">
+            <p></p>
+            <ul id="Policylink">
+              <li><a href="#">Australian WhistleBlower Policy</a></li>
+              <li><a href="#">Modern Slavery Statement</a></li>
+            </ul>
+
+            <p>
+              This website is intended for the user's own use in reviewing
+              information available here about State Street Corporation and its
+              affiliates ("State Street"). By accessing this website, you agree
+              to be bound by the terms and conditions that appear herein. These
+              terms and conditions are subject to change. State Street reserves
+              the right to modify these terms and conditions, which it may do by
+              posting changes to the website. If you do not agree with these
+              terms and conditions, please do not access the website.
+            </p>
+          </div>
+          <div class="footer-bottom">
+            <p style="color: white">
+              © 2023
+              <a href="#" style="color: white">State Street Corporation.</a> All
+              rights reserved.
+            </p>
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="#">Global Privacy Notice</a></li>
+              <li class="footer-li"><a href="#">Cookie Settings</a></li>
+              <li class="footer-li"><a href="#">Cookie Disclosure</a></li>
+              <li class="footer-li"><a href="#">Legal</a></li>
+              <li class="footer-li"><a href="#">Settlement Announcement</a></li>
+              <li class="footer-li"><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./js/insightsScript.js"></script>
+  <script src="./js/jsonScript.js"></script>
+  <script src="./js/filterPopup.js"></script>
+  <script src="./script.js"></script>
 </html>

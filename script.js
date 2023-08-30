@@ -15,3 +15,10 @@ window.addEventListener("click", (event) => {
     closePopup();
   }
 });
+
+const searchBTN = document.getElementById("search");
+searchBTN.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") {
+    window.location.href = `/insightIndex.html?q=${event.target.value}`;
+  }
+});

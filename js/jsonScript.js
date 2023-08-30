@@ -1,10 +1,30 @@
 let blogContainer = document.querySelector("#blogContainer");
 
+const queryParams = new URLSearchParams(window.location.search);
+
 fetch("../json/blog.json")
   .then((response) => response.json())
   .then((data) => {
-    data.map((items, index) => {
-      blogContainer.innerHTML += `
+    console.log(queryParams.get("q"));
+    console.log(
+      data.filter(
+        (item) =>
+          item.title.includes(queryParams.get("q")) ||
+          item.desc.includes(queryParams.get("q")) ||
+          item.links.includes(queryParams.get("q")) ||
+          queryParams.get("q") === ""
+      )
+    );
+    data
+      .filter(
+        (item) =>
+          item.title.includes(queryParams.get("q")) ||
+          item.desc.includes(queryParams.get("q")) ||
+          item.links.includes(queryParams.get("q")) ||
+          queryParams.get("q") === ""
+      )
+      .map((items, index) => {
+        blogContainer.innerHTML += `
       <div class="blogCard" id="blogCard">
         <div class="cardContainer">
         <h3 class="blogTitle">${items.title}</h3>
@@ -19,7 +39,7 @@ fetch("../json/blog.json")
       </div>
       </div>
         `;
-    });
+      });
   })
   .catch((error) => {
     console.error("Error fetching data:", error);
